@@ -3,12 +3,14 @@ main:
   - title: "Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving"
     authors: <strong>Shan Yu</strong>, Jiarong Xing, Yifan Qiao, Mingyuan Ma, Yangmin Li, Yang Wang, Shuo Yang, Zhiqiang Xie, Shiyi Cao, Ke Bao, Ion Stoica, Harry Xu, Ying Sheng
     conference_short: arXiv
-    conference: <a href="https://arxiv.org/abs/2505.04021">arXiv:2505.04021</a>, 2025
+    conference: arXiv preprint, 2025
+    pdf: https://arxiv.org/pdf/2505.04021.pdf
 
   - title: "ConServe: Harvesting GPUs for Low-Latency and High-Throughput Large Language Model Serving"
     authors: Yifan Qiao, Shu Anzai, <strong>Shan Yu</strong>, Haoran Ma, Yang Wang, Miryung Kim, Harry Xu
     conference_short: arXiv
-    conference: <a href="https://arxiv.org/abs/2410.01228">arXiv:2410.01228</a>, 2024
+    conference: arXiv preprint, 2024
+    pdf: https://arxiv.org/pdf/2410.01228.pdf
 
   - title: "VQPy: An Object-Oriented Approach to Modern Video Analytics"
     authors: <strong>Shan Yu</strong>, Zhenting Zhu, Yu Chen, Hanchen Xu, Pengzhan Zhao, Yang Wang, Arthi Padmanabhan, Hugo Latapie, Harry Xu
@@ -29,27 +31,3 @@ main:
     authors: Jason (Jinquan) Dai, Ding Ding, Dongjie Shi, Shengsheng Huang, Jiao Wang, Xin Qiu, Kai Huang, Guoqiong Song, Yang Wang, Qiyuan Gong, Jiaming Song, <strong>Shan Yu</strong>, Le Zheng, Yina Chen, Junwei Deng, Ge Song
     conference_short: CVPR
     conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong> Workshop, 2022.
-
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
-
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
-
-
-  
