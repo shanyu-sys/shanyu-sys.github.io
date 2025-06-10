@@ -1,5 +1,5 @@
 ## Awards
-
+<ul style="margin:0 0 5px;">
 <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
   <div style="flex: 1;">• MLSys Student Grant</div>
   <div style="text-align: right;">2024</div>
@@ -59,3 +59,4 @@
   <div style="flex: 1;">• Excellent Student Awards, Zhejiang University</div>
   <div style="text-align: right;">2012-2013</div>
 </div> 
+</ul>
