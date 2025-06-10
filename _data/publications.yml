@@ -1,0 +1,55 @@
+main:
+
+  - title: "Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving"
+    authors: <strong>Shan Yu</strong>, Jiarong Xing, Yifan Qiao, Mingyuan Ma, Yangmin Li, Yang Wang, Shuo Yang, Zhiqiang Xie, Shiyi Cao, Ke Bao, Ion Stoica, Harry Xu, Ying Sheng
+    conference_short: arXiv
+    conference: <a href="https://arxiv.org/abs/2505.04021">arXiv:2505.04021</a>, 2025
+
+  - title: "ConServe: Harvesting GPUs for Low-Latency and High-Throughput Large Language Model Serving"
+    authors: Yifan Qiao, Shu Anzai, <strong>Shan Yu</strong>, Haoran Ma, Yang Wang, Miryung Kim, Harry Xu
+    conference_short: arXiv
+    conference: <a href="https://arxiv.org/abs/2410.01228">arXiv:2410.01228</a>, 2024
+
+  - title: "VQPy: An Object-Oriented Approach to Modern Video Analytics"
+    authors: <strong>Shan Yu</strong>, Zhenting Zhu, Yu Chen, Hanchen Xu, Pengzhan Zhao, Yang Wang, Arthi Padmanabhan, Hugo Latapie, Harry Xu
+    conference_short: MLSys
+    conference: Conference on Machine Learning and Systems <strong>(MLSys)</strong>, 2024.
+
+  - title: "DRust: Language-Guided Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency"
+    authors: Haoran Ma, Yifan Qiao, Shi Liu, <strong>Shan Yu</strong>, Yuanjiang Ni, Qingda Lu, Jiesheng Wu, Yiying Zhang, Miryung Kim, Harry Xu
+    conference_short: OSDI
+    conference: USENIX Symposium on Operating Systems Design and Implementation <strong>(OSDI)</strong>, 2024.
+
+  - title: "Ethosight: A Reasoning-Guided Iterative Learning System for Nuanced Perception based on Joint-Embedding and Contextual Label Affinity"
+    authors: Hugo Latapie, <strong>Shan Yu</strong>, Patrick Hammer, Kristinn R. Thorisson, Vahagn Petrosyan, Brandon Kynoch, Alind Khare, Payman Behnam, Alexey Tumanov, Aksheit Saxena, Anish Aralikatti, Hanning Chen, Mohsen Imani, Mike Archbold, Tangrui Li, Pei Wang, Justin Hart
+    conference_short: arXiv
+    conference: <a href="https://arxiv.org/abs/2307.10577">arXiv:2307.10577</a>, 2023
+
+  - title: "BigDL 2.0: Seamless scaling of ai pipelines from laptops to distributed cluster"
+    authors: Jason (Jinquan) Dai, Ding Ding, Dongjie Shi, Shengsheng Huang, Jiao Wang, Xin Qiu, Kai Huang, Guoqiong Song, Yang Wang, Qiyuan Gong, Jiaming Song, <strong>Shan Yu</strong>, Le Zheng, Yina Chen, Junwei Deng, Ge Song
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong> Workshop, 2022.
+
+  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
+    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
+    conference_short: MICCAI
+    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
+    pdf: https://arxiv.org/pdf/2306.00988.pdf
+    code: https://github.com/MrGiovanni/ContinualLearning
+    bibtex: https://bib.yliu.me/MICCAI23.txt
+    image: ./assets/img/teaser_example_2.png
+    notes: Early Accept
+
+  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
+    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
+    pdf: https://arxiv.org/pdf/2002.10211.pdf
+    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
+    page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+    notes: Oral Presentation
+    image: ./assets/img/teaser_example.png
+
+
+  
