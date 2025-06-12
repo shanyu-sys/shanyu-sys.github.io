@@ -1,4 +1,4 @@
-<h2 style="margin: 10px 0px 10px;">Talks</h2>
+<h2 style="margin: 25px 0px 10px;">Talks</h2>
 
 <h4 style="margin:0 10px 0;">VQPy: An Object-Oriented Approach to Modern Video Analytics.</h4>
 

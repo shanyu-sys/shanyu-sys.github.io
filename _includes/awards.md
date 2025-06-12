@@ -1,4 +1,4 @@
-<h2 style="margin:10px 0 5px;">Awards</h2>
+<h2 style="margin:25px 0 10px;">Awards</h2>
 
 <ul style="margin:0 0 5px;">
   <li style="position: relative; margin-bottom: 5px;">
