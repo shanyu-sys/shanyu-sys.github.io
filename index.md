@@ -22,4 +22,5 @@ Before my PhD, I spent four years at Intel as an AI frameworks engineer, buildin
 
 {% include_relative _includes/services.md %}
 
+{% include_relative _includes/talks.md %}
 {% include_relative _includes/awards.md %}
