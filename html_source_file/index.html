@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Shan Yu's personal website">
+    <meta name="description" content="The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.">
     
     <meta name="keywords" content="minimal light">
     
     
-    <link rel="canonical" href="https://shanyu-sys.github.io/"/>
+    <link rel="canonical" href="https://minimal-light-theme.yliu.me/"/>
     
 
     <link rel="icon" media="(prefers-color-scheme:dark)" href="./assets/img/favicon-dark.png" type="image/png" />
@@ -19,19 +19,236 @@
     <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
 
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
-    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin=anonymous>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/publications.css">
     
+    <link rel="stylesheet" href="./assets/css/font.css">
+    
+    
+    <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
+    <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
+    
+    <style>
+      /* Base styles */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: #24292e;
+        max-width: 1012px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
 
+      .wrapper {
+        display: flex;
+        padding: 20px;
+        max-width: 1012px;
+        margin: 0 auto;
+      }
+
+      header {
+        width: 300px;
+        padding-right: 40px;
+        flex-shrink: 0;
+      }
+
+      section {
+        flex-grow: 1;
+        max-width: 600px;
+      }
+
+      .image.avatar {
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .image.avatar img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      h1 {
+        font-size: 1.8em;
+        margin: 0 0 10px 0;
+      }
+
+      position {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      email {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .social-icons {
+        margin: 20px 0;
+      }
+
+      .social-icons a {
+        color: #24292e;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin: 30px 0 15px 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eaecef;
+      }
+
+      /* Publications styles */
+      .publications {
+        margin: 0;
+        padding: 0;
+      }
+
+      .pub-row {
+        margin-bottom: 10px;
+      }
+
+      .pub-row:first-child {
+        margin-top: 20px;
+      }
+
+      .title {
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      .title a {
+        color: #0366d6;
+        text-decoration: none;
+      }
+
+      .author {
+        margin-bottom: 5px;
+      }
+
+      .periodical {
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+
+      .links {
+        margin-top: 5px;
+      }
+
+      .links a {
+        display: inline-block;
+        padding: 3px 8px;
+        margin-right: 5px;
+        background-color: #f1f8ff;
+        border: 1px solid #c8e1ff;
+        border-radius: 3px;
+        color: #0366d6;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      /* Lists */
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      /* Links */
+      a {
+        color: #0366d6;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .wrapper {
+          flex-direction: column;
+        }
+
+        header {
+          width: 100%;
+          padding-right: 0;
+          text-align: center;
+        }
+
+        .image.avatar {
+          margin: 0 auto 20px;
+        }
+
+        section {
+          max-width: 100%;
+        }
+      }
+
+      /* Additional styles for publications */
+      .bibliography {
+        list-style: none;
+        padding: 0;
+      }
+
+      .bibliography li {
+        margin-bottom: 20px;
+      }
+
+      .col-sm-12 {
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      /* Awards section styles */
+      .awards-list {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 0 0 5px;
+      }
+
+      .award-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 8px;
+      }
+
+      .award-item::before {
+        display: none;
+      }
+
+      .award-name {
+        flex: 1;
+        margin-right: 15px;
+      }
+
+      .award-year {
+        white-space: nowrap;
+      }
+
+      /* UCLA color */
+      autocolor {
+        color: #002D72;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <header>
         
-        <a class="image avatar"><img src="./assets/img/shan.jpg" alt="avatar" style="width: 400px !important; height: auto;" /></a>
+        
+        <a class="image avatar"><img src="./assets/img/shan.jpg" alt="avatar" /></a>
+        
+
         <h1>Shan Yu</h1>
 
         
@@ -56,10 +273,6 @@
         
 
         
-        <a style="margin: 0 5px 0 0" href="assets/files/CV.pdf"></a>
-          <i class="ai ai-cv" style="font-size:1.3rem;"></i>
-        </a>
-        
 
         
         <a style="margin: 0 5px 0 0" href="https://github.com/shanyu-sys">
@@ -68,15 +281,11 @@
         
 
         
-        <a style="margin: 0 5px 0 0" href="https://www.linkedin.com/in/shan-yu-7a5728169">
+        <a style="margin: 0 5px 0 0" href="https://linkedin.com/in/shan-yu-7a5728169">
           <i class="fab fa-linkedin"></i>
         </a>
         
 
-        
-        <!-- <a style="margin: 0 0 0 0" href="https://twitter.com/">
-          <i class="fab fa-twitter"></i>
-        </a> -->
         
         </div>
         <br>
@@ -86,26 +295,438 @@
 
       <h2 id="about-me">About Me</h2>
 
-<p>I am a third-year Ph.D. student in Computer Science at UCLA, where I am fortunate to be advised by Prof. [Harry Xu](https://web.cs.ucla.edu/~harryxu/).
+<p>I am a third-year Ph.D. student in Computer Science at UCLA, where I am fortunate to be advised by Prof. <a href="https://web.cs.ucla.edu/~harryxu/">Harry Xu</a>.</p>
 
-My research focuses on **machine learning systems**, where I design and build high-performance, cost-effective solutions by leveraging application semantics. My current work includes developing scalable and efficient systems for large language model (LLM) serving ([Prism](https://arxiv.org/abs/2505.04021), [ConServe](https://github.com/prism-ai/conserve)) and video querying ([VQPy](https://github.com/prism-ai/vqpy)).
+<p>My research focuses on <strong>machine learning systems</strong>, where I design and build high-performance, cost-effective solutions by leveraging application semantics. My current work includes developing scalable and efficient systems for large language model (LLM) serving (<a href="https://arxiv.org/abs/2505.04021">Prism</a>, <a href="https://github.com/prism-ai/conserve">ConServe</a>) and video querying (<a href="https://github.com/prism-ai/vqpy">VQPy</a>).</p>
 
-Before my PhD, I spent four years at Intel as an AI frameworks engineer, building open-source big data and AI systems optimized for Intel CPUs in data centers.</p>
+<p>Before my PhD, I spent four years at Intel as an AI frameworks engineer, building open-source big data and AI systems optimized for Intel CPUs in data centers.</p>
 
-<!-- 
-<h2 id="news">News</h2>
+<!-- ## News
 
-<ul>
-  <li><strong>[Feb. 2020]</strong> Our paper about incremental learning is accepted to CVPR 2020.</li>
-  <li><strong>[Feb. 2020]</strong> We will host the ACM Multimedia Asia 2020 conference in Singapore!</li>
-  <li><strong>[Sept. 2019]</strong> Our paper about few-shot learning is accepted to NeurIPS 2019.</li>
-  <li><strong>[Mar. 2019]</strong> Our paper about few-shot learning is accepted to CVPR 2019.</li>
-</ul> -->
+- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
+- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
+- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
+- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019. -->
 
-<!-- <h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2> -->
+<!-- <h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
 
-
+<div class="publications">
+<ul style="margin:0 0 5px;">
 
 
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://arxiv.org/pdf/2505.04021.pdf">Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving</a></div>
+      <div class="author"><strong>Shan Yu</strong>, Jiarong Xing, Yifan Qiao, Mingyuan Ma, Yangmin Li, Yang Wang, Shuo Yang, Zhiqiang Xie, Shiyi Cao, Ke Bao, Ion Stoica, Harry Xu, Ying Sheng</div>
+      <div class="periodical"><em>arXiv preprint, 2025</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://arxiv.org/pdf/2505.04021.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/ovg-project" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://arxiv.org/pdf/2410.01228.pdf">ConServe: Harvesting GPUs for Low-Latency and High-Throughput Large Language Model Serving</a></div>
+      <div class="author">Yifan Qiao, Shu Anzai, <strong>Shan Yu</strong>, Haoran Ma, Yang Wang, Miryung Kim, Harry Xu</div>
+      <div class="periodical"><em>arXiv preprint, 2024</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://arxiv.org/pdf/2410.01228.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/ivanium/concerto" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://arxiv.org/abs/2311.01623">VQPy: An Object-Oriented Approach to Modern Video Analytics</a></div>
+      <div class="author"><strong>Shan Yu</strong>, Zhenting Zhu, Yu Chen, Hanchen Xu, Pengzhan Zhao, Yang Wang, Arthi Padmanabhan, Hugo Latapie, Harry Xu</div>
+      <div class="periodical"><em>Conference on Machine Learning and Systems <strong>(MLSys)</strong>, 2024.</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://arxiv.org/abs/2311.01623" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/vqpy/vqpy" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://www.usenix.org/system/files/osdi24-ma-haoran.pdf">DRust: Language-Guided Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency</a></div>
+      <div class="author">Haoran Ma, Yifan Qiao, Shi Liu, <strong>Shan Yu</strong>, Yuanjiang Ni, Qingda Lu, Jiesheng Wu, Yiying Zhang, Miryung Kim, Harry Xu</div>
+      <div class="periodical"><em>USENIX Symposium on Operating Systems Design and Implementation <strong>(OSDI)</strong>, 2024.</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://www.usenix.org/system/files/osdi24-ma-haoran.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/uclasystem/DRust" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+       
+      <a href="https://www.usenix.org/conference/osdi24/presentation/ma-haoran" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Talk</a>
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://arxiv.org/pdf/2307.10577.pdf">Ethosight: A Reasoning-Guided Iterative Learning System for Nuanced Perception based on Joint-Embedding and Contextual Label Affinity</a></div>
+      <div class="author">Hugo Latapie, <strong>Shan Yu</strong>, Patrick Hammer, Kristinn R. Thorisson, Vahagn Petrosyan, Brandon Kynoch, Alind Khare, Payman Behnam, Alexey Tumanov, Aksheit Saxena, Anish Aralikatti, Hanning Chen, Mohsen Imani, Mike Archbold, Tangrui Li, Pei Wang, Justin Hart</div>
+      <div class="periodical"><em>arXiv preprint, 2023</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://arxiv.org/pdf/2307.10577.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://arxiv.org/abs/2204.01715">BigDL 2.0: Seamless scaling of ai pipelines from laptops to distributed cluster</a></div>
+      <div class="author">Jason (Jinquan) Dai, Ding Ding, Dongjie Shi, Shengsheng Huang, Jiao Wang, Xin Qiu, Kai Huang, Guoqiong Song, Yang Wang, Qiyuan Gong, Jiaming Song, <strong>Shan Yu</strong>, Le Zheng, Yina Chen, Junwei Deng, Ge Song</div>
+      <div class="periodical"><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong> Workshop, 2022.</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://arxiv.org/abs/2204.01715" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/intel/BigDL" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+</ul>
+</div> -->
+<h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
+
+<div class="publications">
+<ol class="bibliography">
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://arxiv.org/pdf/2505.04021.pdf">Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving</a></div>
+      <div class="author"><strong>Shan Yu</strong>, Jiarong Xing, Yifan Qiao, Mingyuan Ma, Yangmin Li, Yang Wang, Shuo Yang, Zhiqiang Xie, Shiyi Cao, Ke Bao, Ion Stoica, Harry Xu, Ying Sheng</div>
+      <div class="periodical"><em>arXiv preprint, 2025</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://arxiv.org/pdf/2505.04021.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/ovg-project" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://arxiv.org/pdf/2410.01228.pdf">ConServe: Harvesting GPUs for Low-Latency and High-Throughput Large Language Model Serving</a></div>
+      <div class="author">Yifan Qiao, Shu Anzai, <strong>Shan Yu</strong>, Haoran Ma, Yang Wang, Miryung Kim, Harry Xu</div>
+      <div class="periodical"><em>arXiv preprint, 2024</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://arxiv.org/pdf/2410.01228.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/ivanium/concerto" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://arxiv.org/abs/2311.01623">VQPy: An Object-Oriented Approach to Modern Video Analytics</a></div>
+      <div class="author"><strong>Shan Yu</strong>, Zhenting Zhu, Yu Chen, Hanchen Xu, Pengzhan Zhao, Yang Wang, Arthi Padmanabhan, Hugo Latapie, Harry Xu</div>
+      <div class="periodical"><em>Conference on Machine Learning and Systems <strong>(MLSys)</strong>, 2024.</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://arxiv.org/abs/2311.01623" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/vqpy/vqpy" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://www.usenix.org/system/files/osdi24-ma-haoran.pdf">DRust: Language-Guided Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency</a></div>
+      <div class="author">Haoran Ma, Yifan Qiao, Shi Liu, <strong>Shan Yu</strong>, Yuanjiang Ni, Qingda Lu, Jiesheng Wu, Yiying Zhang, Miryung Kim, Harry Xu</div>
+      <div class="periodical"><em>USENIX Symposium on Operating Systems Design and Implementation <strong>(OSDI)</strong>, 2024.</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://www.usenix.org/system/files/osdi24-ma-haoran.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/uclasystem/DRust" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+       
+      <a href="https://www.usenix.org/conference/osdi24/presentation/ma-haoran" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Talk</a>
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://arxiv.org/pdf/2307.10577.pdf">Ethosight: A Reasoning-Guided Iterative Learning System for Nuanced Perception based on Joint-Embedding and Contextual Label Affinity</a></div>
+      <div class="author">Hugo Latapie, <strong>Shan Yu</strong>, Patrick Hammer, Kristinn R. Thorisson, Vahagn Petrosyan, Brandon Kynoch, Alind Khare, Payman Behnam, Alexey Tumanov, Aksheit Saxena, Anish Aralikatti, Hanning Chen, Mohsen Imani, Mike Archbold, Tangrui Li, Pei Wang, Justin Hart</div>
+      <div class="periodical"><em>arXiv preprint, 2023</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://arxiv.org/pdf/2307.10577.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <div class="title"><a href="https://arxiv.org/abs/2204.01715">BigDL 2.0: Seamless scaling of ai pipelines from laptops to distributed cluster</a></div>
+      <div class="author">Jason (Jinquan) Dai, Ding Ding, Dongjie Shi, Shengsheng Huang, Jiao Wang, Xin Qiu, Kai Huang, Guoqiong Song, Yang Wang, Qiyuan Gong, Jiaming Song, <strong>Shan Yu</strong>, Le Zheng, Yina Chen, Junwei Deng, Ge Song</div>
+      <div class="periodical"><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong> Workshop, 2022.</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://arxiv.org/abs/2204.01715" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/intel/BigDL" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+</ol>
+</div>
+
+<h2 id="services">Services</h2>
+
+<h4 style="margin:0 10px 0;">Artifact Evaluation Committee</h4>
+
+<ul style="margin:0 0 5px;">
+  <li><a href="https://www.usenix.org/conference/osdi24"><autocolor>USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2024</autocolor></a></li>
+  <li><a href="https://www.usenix.org/conference/atc24"><autocolor>USENIX Annual Technical Conference (ATC) 2024</autocolor></a></li>
+</ul>
+
+<h2 style="margin: 25px 0px 10px;">Talks</h2>
+
+<h4 style="margin:0 10px 0;">VQPy: An Object-Oriented Approach to Modern Video Analytics</h4>
+<ul style="margin:0 0 5px;">
+  <li>Zhejiang University, Nanjing University, Chinese Academy of Science, 2023</li>
+</ul>
+
+<h4 style="margin:0 10px 0;">What's on-going in Spark + AI Community</h4>
+<ul style="margin:0 0 5px;">
+  <li>InfoQ Live <em>Big Shot talks</em>, 2021</li>
+</ul>
+
+<h4 style="margin:0 10px 0;">Chronos: Scalable Time Series Analytics with AutoML</h4>
+<ul style="margin:0 0 5px;">
+  <li>Intel <em>IAGS China Technical Dev Series</em>, 2021</li>
+</ul>
+
+<h4 style="margin:0 10px 0;">Time Series Analytics using AutoML and Ray on Analytics Zoo</h4>
+<ul style="margin:0 0 5px;">
+  <li>Intel <em>Data Centric Conference and New Product Launch</em>, 2020</li>
+</ul>
+
+<h4 style="margin:0 10px 0;">Leveraging Distributed AutoML for Time Series Analytics</h4>
+<ul style="margin:0 0 5px;">
+  <li>Alibaba EMR <em>Apache Spark Chinese Technology Salon</em>, Shanghai, 2019</li>
+</ul>
+
+<h4 style="margin:0 10px 0;">Game Playing Using AI on Spark</h4>
+<ul style="margin:0 0 5px;">
+  <li>O'Reilly Artificial Intelligence Conference, Beijing, 2019</li>
+</ul>
+<h2 style="margin:25px 0 10px;">Awards</h2>
+
+<ul class="awards-list">
+  <li class="award-item">
+    <span class="award-name">MLSys Student Grant</span>
+    <span class="award-year">2024</span>
+  </li>
+  <li class="award-item">
+    <span class="award-name">NSDI Diversity Grant</span>
+    <span class="award-year">2024</span>
+  </li>
+  <li class="award-item">
+    <span class="award-name">UCLA Summer Mentored Research Fellowship</span>
+    <span class="award-year">2023, 2024</span>
+  </li>
+  <li class="award-item">
+    <span class="award-name">Cisco You Amaze 2 Award</span>
+    <span class="award-year">2023</span>
+  </li>
+  <li class="award-item">
+    <span class="award-name">Intel Division Recognition Award</span>
+    <span class="award-year">2021, 2022</span>
+  </li>
+  <li class="award-item">
+    <span class="award-name">Graduate of Merit, Zhejiang University</span>
+    <span class="award-year">2017-2018</span>
+  </li>
+  <li class="award-item">
+    <span class="award-name">Honor for Graduate, Zhejiang University</span>
+    <span class="award-year">2016-2018</span>
+  </li>
+  <li class="award-item">
+    <span class="award-name">Academic Scholarship, Zhejiang University</span>
+    <span class="award-year">2015-2016</span>
+  </li>
+</ul>
+
+
+      <br>
+
+      
+
+      </section>
+      <footer>
+        
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
   </body>
 </html>
