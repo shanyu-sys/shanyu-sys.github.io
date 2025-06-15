@@ -6,7 +6,7 @@ layout: homepage
 
 I am a third-year Ph.D. student in Computer Science at UCLA, where I am fortunate to be advised by Prof. [Harry Xu](https://web.cs.ucla.edu/~harryxu/).
 
-My research focuses on **machine learning systems**, where I design and build high-performance, cost-effective solutions by leveraging application semantics. My current work includes developing scalable and efficient systems for large language model (LLM) serving ([Prism](https://arxiv.org/abs/2505.04021), [ConServe](https://github.com/prism-ai/conserve)) and video querying ([VQPy](https://github.com/prism-ai/vqpy)).
+My research focuses on **machine learning systems**, where I design and build high-performance, cost-effective solutions by leveraging application semantics. My current work includes developing scalable and efficient systems for large language model (LLM) serving ([Prism](https://arxiv.org/abs/2505.04021), [ConServe](https://arxiv.org/pdf/2410.01228.pdf)) and video querying ([VQPy](https://github.com/vqpy/vqpy)).
 
 Before my PhD, I spent four years at Intel as an AI frameworks engineer, building open-source big data and AI systems optimized for Intel CPUs in data centers.
 
