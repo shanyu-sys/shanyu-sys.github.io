@@ -3,6 +3,12 @@
 <ul style="margin:0 0 5px; list-style-type: disc; padding-left: 20px;">
   <li style="display: list-item; margin-bottom: 8px;">
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
+      <span style="flex: 1; margin-right: 15px;">Amazon AI PhD Fellowship</span>
+      <span style="white-space: nowrap;">2025</span>
+    </div>
+  </li>
+  <li style="display: list-item; margin-bottom: 8px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <span style="flex: 1; margin-right: 15px;">MLSys Student Grant</span>
       <span style="white-space: nowrap;">2024</span>
     </div>

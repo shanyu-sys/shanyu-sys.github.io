@@ -4,19 +4,24 @@ layout: homepage
 
 ## About Me
 
-I am a third-year Ph.D. student in Computer Science at UCLA, where I am fortunate to be advised by Prof. [Harry Xu](https://web.cs.ucla.edu/~harryxu/).
+I am a Ph.D. candidate in Computer Science at the [UCLA Systems Lab](http://systems.cs.ucla.edu/), advised by Prof. [Harry Xu](https://web.cs.ucla.edu/~harryxu/).
 
-My research focuses on **machine learning systems**, where I design and build high-performance, cost-effective solutions by leveraging application semantics. My current work includes developing scalable and efficient systems for large language model (LLM) serving ([Prism](https://arxiv.org/abs/2505.04021), [ConServe](https://arxiv.org/pdf/2410.01228.pdf)) and video querying ([VQPy](https://github.com/vqpy/vqpy)).
+My research lies in **machine learning systems (MLSys)**, with a focus on building **cost-efficient, low-latency systems for compound AI workloads**, including large language model (LLM) serving ([Prism](https://arxiv.org/abs/2505.04021), [ConServe](https://arxiv.org/pdf/2410.01228.pdf)), multi-agent systems ([Pythia](https://arxiv.org/abs/2604.25899)), and video QA pipelines ([VQPy](https://github.com/vqpy/vqpy)).
 
-Before my PhD, I spent four years at Intel as an AI frameworks engineer, building open-source big data and AI systems optimized for Intel CPUs in data centers.
+Before joining UCLA, I was a Senior AI Frameworks Engineer at Intel, where I was a core developer of [BigDL](https://github.com/intel/BigDL), an open-source framework for scalable big data analytics and AI, and shipped distributed AI pipelines deployed at production scale. I received my bachelor's and master's degrees from Zhejiang University.
 
 
-<!-- ## News
+## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019. -->
+- **[May 2026]** Concerto (formerly ConServe) accepted to ICML 2026.
+- **[Apr. 2026]** Prism accepted to OSDI 2026. See you in Seattle!
+- **[Apr. 2026]** [kvcached](https://github.com/ovg-project/kvcached) has been productionized by Red Hat for cost-efficient multi-LLM serving. Read the [Red Hat blog](https://www.redhat.com/en/blog/running-llms-dynamically-production-limited-resources-hard-we-think-theres-room-another-approach).
+- **[Oct. 2025]** Released [kvcached](https://github.com/ovg-project/kvcached) with a technical [deep-dive blog](https://yifanqiao.notion.site/Solve-the-GPU-Cost-Crisis-with-kvcached-289da9d1f4d68034b17bf2774201b141).
+- **[Sept. 2025]** Received the 2025 Amazon AI Fellowship.
+- **[June 2025]** Started a research internship with the Alibaba Cloud team in Bellevue.
+
+
+{% include_relative _includes/opensource.md %}
 
 {% include_relative _includes/publications.md %}
 

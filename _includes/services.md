@@ -1,8 +1,10 @@
 ## Services
 
-<h4 style="margin:0 10px 0;">Artifact Evaluation Committee</h4>
-
 <ul style="margin:0 0 5px;">
-  <li><a href="https://www.usenix.org/conference/osdi24"><autocolor>USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2024</autocolor></a></li>
-  <li><a href="https://www.usenix.org/conference/atc24"><autocolor>USENIX Annual Technical Conference (ATC) 2024</autocolor></a></li>
+  <li>NeurIPS 2026, Reviewer</li>
+  <li>MLSys 2026, External Review Committee</li>
+  <li>ASPLOS 2026, External Review Committee</li>
+  <li>EuroSys 2026, Shadow Program Committee</li>
+  <li><a href="https://www.usenix.org/conference/osdi24">OSDI 2024</a>, Artifact Evaluation Committee</li>
+  <li><a href="https://www.usenix.org/conference/atc24">ATC 2024</a>, Artifact Evaluation Committee</li>
 </ul>

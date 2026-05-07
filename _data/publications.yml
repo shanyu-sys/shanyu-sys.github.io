@@ -1,20 +1,27 @@
 main:
 
-  - title: "Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving"
-    authors: <strong>Shan Yu</strong>, Jiarong Xing, Yifan Qiao, Mingyuan Ma, Yangmin Li, Yang Wang, Shuo Yang, Zhiqiang Xie, Shiyi Cao, Ke Bao, Ion Stoica, Harry Xu, Ying Sheng
+  - title: "Pythia: Toward Predictability-Driven Agent-Native LLM Serving"
+    authors: <strong>Shan Yu</strong>, Junyi Shu, Yuanjiang Ni, Kun Qian, Xue Li, Yang Wang, Jinyuan Zhang, Ziyi Xu, Shuo Yang, Lingjun Zhu, Ennan Zhai, Qingda Lu, Jiarong Xing, Youyou Lu, Xin Jin, Xuanzhe Liu, Harry Xu
     conference_short: arXiv
-    conference: arXiv preprint, 2025
+    conference: arXiv preprint, 2026
+    pdf: https://arxiv.org/abs/2604.25899
+    # bibtex: /assets/bibtex/pythia.bib
+
+  - title: "Prism: Cost-Efficient Multi-LLM Serving via GPU Memory Ballooning"
+    authors: <strong>Shan Yu</strong>, Yifan Qiao, Mingyuan Ma, Yangmin Li, Shuo Yang, Xinyuan Tong, Yang Wang, Zhiqiang Xie, Yuwei An, Shiyi Cao, Ke Bao, Deepak Vij, Xiaoning Ding, Yichen Wang, Qingda Lu, Zhong Wang, Gao Gao, Harry Xu, Junyi Shu, Jiarong Xing, Ying Sheng
+    conference_short: OSDI
+    conference: 20th USENIX Symposium on Operating Systems Design and Implementation <strong>(OSDI)</strong>, 2026.
     pdf: https://arxiv.org/pdf/2505.04021.pdf
     code: https://github.com/ovg-project
     # bibtex: /assets/bibtex/prism.bib
 
-  - title: "ConServe: Harvesting GPUs for Low-Latency and High-Throughput Large Language Model Serving"
-    authors: Yifan Qiao, Shu Anzai, <strong>Shan Yu</strong>, Haoran Ma, Yang Wang, Miryung Kim, Harry Xu
-    conference_short: arXiv
-    conference: arXiv preprint, 2024
+  - title: "Concerto: Fine-Grained GPU Harvesting for LLM Online and Offline Co-Serving"
+    authors: Yifan Qiao, <strong>Shan Yu</strong>, Shu Anzai, Haoran Ma, Shuo Yang, Yang Wang, Miryung Kim, Yongji Wu, Yang Zhou, Jiarong Xing, Joseph E. Gonzalez, Ion Stoica, Harry Xu
+    conference_short: ICML
+    conference: 43rd International Conference on Machine Learning <strong>(ICML)</strong>, 2026.
     pdf: https://arxiv.org/pdf/2410.01228.pdf
     code: https://github.com/ivanium/concerto
-    # bibtex: /assets/bibtex/conserve.bib
+    # bibtex: /assets/bibtex/concerto.bib
 
   - title: "VQPy: An Object-Oriented Approach to Modern Video Analytics"
     authors: <strong>Shan Yu</strong>, Zhenting Zhu, Yu Chen, Hanchen Xu, Pengzhan Zhao, Yang Wang, Arthi Padmanabhan, Hugo Latapie, Harry Xu

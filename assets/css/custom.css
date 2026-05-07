@@ -1,0 +1,143 @@
+/* ----------------------------------------------------------------
+   Custom academic-style refinements layered on top of minimal-light.
+   Goal: clean, restrained, scholarly.
+   ---------------------------------------------------------------- */
+
+/* Section headings: subtle hairline underline, balanced weight */
+section h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  margin-top: 2.2rem !important;
+  margin-bottom: 0.9rem !important;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #e5e5e5;
+  color: #1a1a1a;
+}
+
+/* Sub-headings within sections (h4 used for talk titles, service roles) */
+section h4 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin-top: 0.9rem !important;
+  margin-bottom: 0.25rem !important;
+  color: #2a2a2a;
+}
+
+/* Body paragraphs in About Me / News a touch more readable */
+section p {
+  line-height: 1.65;
+  margin-bottom: 0.85rem;
+}
+
+/* Links: subtle, with refined hover */
+section a,
+section a:visited {
+  color: #1f5fa8;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  border-bottom: 1px solid transparent;
+}
+section a:hover {
+  color: #0d3d75;
+  border-bottom-color: #0d3d75;
+}
+
+/* News list: tighter, calmer */
+section ul {
+  padding-left: 1.25rem;
+}
+section > ul > li,
+section ul li {
+  line-height: 1.55;
+  margin-bottom: 0.35rem;
+}
+
+/* Bold date prefix in News / inline lists */
+section ul li strong:first-child {
+  color: #555;
+  font-weight: 600;
+}
+
+/* ---------------- Publications ---------------- */
+.publications ol.bibliography > li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.publications ol.bibliography > li:last-child {
+  border-bottom: none;
+}
+.publications .pub-row .title {
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.4;
+  margin-bottom: 0.15rem;
+  color: #1a1a1a;
+}
+.publications .pub-row .title a {
+  color: #1a1a1a;
+  border-bottom: none;
+}
+.publications .pub-row .title a:hover {
+  color: #1f5fa8;
+}
+.publications .pub-row .author {
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.45;
+  margin-bottom: 0.1rem;
+}
+.publications .pub-row .author strong {
+  color: #1a1a1a;
+}
+.publications .pub-row .periodical {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+.publications .pub-row .periodical em {
+  font-style: italic;
+}
+
+/* Refined PDF / Code / Talk pill buttons */
+.publications .pub-row .links a.btn {
+  display: inline-block;
+  padding: 1px 8px !important;
+  margin-right: 4px;
+  font-size: 0.78rem !important;
+  font-weight: 500;
+  color: #1f5fa8 !important;
+  background: #f4f7fb;
+  border: 1px solid #d8e1ee;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.publications .pub-row .links a.btn:hover {
+  background: #e7eef9;
+  border-color: #b8c8e2;
+  color: #0d3d75 !important;
+}
+
+/* ---------------- Open Source section ---------------- */
+section h2#opensource,
+section h2:has(+ ul) {
+  /* no-op safety */
+}
+
+/* ---------------- Awards: tighter rows ---------------- */
+section ul li > div[style*="display: flex"] {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+/* Ensure consistent body text size in section */
+section {
+  font-size: 0.97rem;
+}
+
+/* Header avatar gentle polish */
+header .image.avatar img {
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
