@@ -15,7 +15,7 @@ main:
     code: https://github.com/ovg-project
     # bibtex: /assets/bibtex/prism.bib
 
-  - title: "Concerto: Fine-Grained GPU Harvesting for LLM Online and Offline Co-Serving"
+  - title: "ConServe: Fine-Grained GPU Harvesting for LLM Online and Offline Co-Serving"
     authors: Yifan Qiao, <strong>Shan Yu</strong>, Shu Anzai, Haoran Ma, Shuo Yang, Yang Wang, Miryung Kim, Yongji Wu, Yang Zhou, Jiarong Xing, Joseph E. Gonzalez, Ion Stoica, Harry Xu
     conference_short: ICML
     conference: 43rd International Conference on Machine Learning <strong>(ICML)</strong>, 2026.

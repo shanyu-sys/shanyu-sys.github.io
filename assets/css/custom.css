@@ -141,3 +141,17 @@ header .image.avatar img {
   border-radius: 50%;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
+
+/* Highlight callout (e.g. intern recruitment) */
+.highlight-callout {
+  background: #f4f7fb;
+  border-left: 3px solid #1f5fa8;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin: 1rem 0 1.2rem 0 !important;
+  font-size: 0.97rem;
+  line-height: 1.55;
+}
+.highlight-callout strong {
+  color: #0d3d75;
+}

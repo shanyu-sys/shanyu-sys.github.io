@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Shan Yu | UCLA</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shan Yu — PhD candidate at UCLA Systems Lab. Research on machine learning systems for compound AI workloads.">
+
+    <link rel="icon" media="(prefers-color-scheme:dark)" href="./assets/img/favicon-dark.png" type="image/png" />
+    <link rel="icon" media="(prefers-color-scheme:light)" href="./assets/img/favicon.png" type="image/png" />
+    <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      :root {
+        --text: #1a1a1a;
+        --muted: #555;
+        --soft: #666;
+        --rule: #e5e5e5;
+        --rule-soft: #f0f0f0;
+        --link: #1f5fa8;
+        --link-hover: #0d3d75;
+        --chip-bg: #f4f7fb;
+        --chip-border: #d8e1ee;
+        --chip-bg-hover: #e7eef9;
+        --uclablue: #002D72;
+      }
+
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        font-family: "Source Serif Pro", "Charter", Georgia, "Times New Roman", serif;
+        font-size: 16.5px;
+        line-height: 1.65;
+        color: var(--text);
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 16px;
+        background: #fdfdfd;
+      }
+
+      .wrapper {
+        display: flex;
+        gap: 48px;
+        padding: 32px 8px;
+        max-width: 1080px;
+        margin: 0 auto;
+        align-items: flex-start;
+      }
+
+      header {
+        width: 260px;
+        flex-shrink: 0;
+        position: sticky;
+        top: 32px;
+      }
+
+      section {
+        flex-grow: 1;
+        max-width: 720px;
+        min-width: 0;
+      }
+
+      /* Header */
+      .image.avatar {
+        display: block;
+        margin: 0 0 18px 0;
+      }
+      .image.avatar img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+      }
+      header h1 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin: 0 0 6px 0;
+        letter-spacing: 0.005em;
+        color: var(--text);
+      }
+      header position {
+        display: block;
+        font-size: 1rem;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+      header autocolor {
+        color: var(--uclablue);
+      }
+      header email {
+        display: block;
+        font-size: 0.92rem;
+        color: var(--muted);
+        margin: 8px 0;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+      header a {
+        color: var(--link);
+        text-decoration: none;
+      }
+      header a:hover { color: var(--link-hover); }
+      .social-icons { margin: 14px 0 0 0; font-size: 1.2rem; }
+      .social-icons a {
+        color: #444;
+        margin-right: 10px;
+        transition: color 0.15s ease;
+      }
+      .social-icons a:hover { color: var(--link); }
+
+      /* Section typography */
+      section h2 {
+        font-size: 1.35rem;
+        font-weight: 600;
+        margin: 1.9rem 0 0.8rem 0;
+        padding-bottom: 0.35rem;
+        border-bottom: 1px solid var(--rule);
+        color: var(--text);
+        letter-spacing: 0.005em;
+      }
+      section > h2:first-child { margin-top: 0; }
+      section h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0.85rem 0 0.2rem 0;
+        color: #2a2a2a;
+      }
+      section p {
+        margin: 0 0 0.85rem 0;
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+      section a, section a:visited {
+        color: var(--link);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: color 0.15s ease, border-color 0.15s ease;
+      }
+      section a:hover {
+        color: var(--link-hover);
+        border-bottom-color: var(--link-hover);
+      }
+      section ul {
+        margin: 0 0 0.5rem 0;
+        padding-left: 1.25rem;
+      }
+      section ul li {
+        margin-bottom: 0.4rem;
+        line-height: 1.55;
+      }
+
+      /* News — timeline style */
+      #news-list {
+        list-style: none;
+        padding: 0.25rem 0 0 0;
+        margin: 0.6rem 0 0 0;
+        position: relative;
+      }
+      #news-list::before {
+        content: "";
+        position: absolute;
+        left: 5.6rem;
+        top: 0.6rem;
+        bottom: 0.4rem;
+        width: 1px;
+        background: var(--rule);
+      }
+      #news-list li {
+        display: grid;
+        grid-template-columns: 5.4rem 1fr;
+        gap: 1.2rem;
+        align-items: baseline;
+        padding: 0.45rem 0;
+        margin: 0;
+        position: relative;
+        transition: transform 0.18s ease;
+      }
+      #news-list li::before {
+        content: "";
+        position: absolute;
+        left: 5.55rem;
+        top: 0.85rem;
+        width: 7px;
+        height: 7px;
+        background: #cfd8e6;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px var(--rule);
+        transition: background 0.18s ease, transform 0.18s ease;
+      }
+      #news-list li:hover::before {
+        background: var(--link);
+        transform: scale(1.2);
+      }
+      #news-list li:hover .news-date {
+        color: var(--link);
+      }
+      #news-list li:hover .news-body {
+        color: var(--text);
+      }
+      #news-list li .news-date {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--soft);
+        text-align: right;
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+        letter-spacing: 0.01em;
+        transition: color 0.18s ease;
+      }
+      #news-list li .news-body {
+        font-size: 0.97rem;
+        line-height: 1.55;
+        color: #333;
+        padding-left: 0.6rem;
+        transition: color 0.18s ease;
+      }
+
+      /* Open source */
+      .project {
+        margin: 0.4rem 0 0.6rem 0;
+        padding: 0.1rem 0;
+      }
+      .project-name {
+        font-size: 1.08rem;
+        font-weight: 700;
+        letter-spacing: 0.005em;
+      }
+      .project-name a {
+        color: var(--link);
+        border-bottom: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .project-name a:hover {
+        color: var(--link-hover);
+        border-bottom: none;
+      }
+      .project-name .fab {
+        font-size: 1rem;
+        color: #444;
+      }
+      .project-name a:hover .fab { color: var(--link-hover); }
+      .project-tagline {
+        display: inline;
+        font-size: 0.95rem;
+        color: var(--soft);
+        font-style: italic;
+        margin-left: 0.5rem;
+      }
+      .project-desc {
+        margin: 0.35rem 0 0.25rem 0;
+        font-size: 0.97rem;
+        line-height: 1.6;
+      }
+      .project-meta {
+        font-size: 0.88rem;
+        color: var(--soft);
+        margin-top: 0.15rem;
+      }
+      .project-meta .badge {
+        display: inline-block;
+        padding: 1px 8px;
+        margin-right: 6px;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #8a4a00;
+        background: #fff5e6;
+        border: 1px solid #f5d9a8;
+        border-radius: 3px;
+        font-style: normal;
+      }
+
+      /* Publications */
+      .publications { margin: 0; padding: 0; }
+      .publications ol.bibliography {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .publications ol.bibliography > li {
+        padding: 0.75rem 0;
+        margin: 0;
+        border-bottom: 1px solid var(--rule-soft);
+      }
+      .publications ol.bibliography > li:last-child { border-bottom: none; }
+      .pub-row .title {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 0.18rem;
+      }
+      .pub-row .title a {
+        color: var(--text);
+        border-bottom: none;
+      }
+      .pub-row .title a:hover {
+        color: var(--link);
+        border-bottom: none;
+      }
+      .pub-row .author {
+        font-size: 0.92rem;
+        color: #444;
+        line-height: 1.45;
+        margin-bottom: 0.1rem;
+      }
+      .pub-row .author strong { color: var(--text); }
+      .pub-row .periodical {
+        font-size: 0.9rem;
+        color: var(--soft);
+        font-style: italic;
+        margin-bottom: 0.35rem;
+      }
+      .pub-row .links { margin-top: 0.15rem; }
+      .pub-row .links a {
+        display: inline-block;
+        padding: 1px 8px;
+        margin-right: 4px;
+        font-size: 0.78rem;
+        font-weight: 500;
+        color: var(--link);
+        background: var(--chip-bg);
+        border: 1px solid var(--chip-border);
+        border-radius: 3px;
+        text-decoration: none;
+      }
+      .pub-row .links a:hover {
+        background: var(--chip-bg-hover);
+        border-color: #b8c8e2;
+        color: var(--link-hover);
+        border-bottom: 1px solid #b8c8e2;
+      }
+
+      /* Awards */
+      .awards-list { list-style: disc; padding-left: 20px; margin: 0; }
+      .award-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 0.95rem;
+        margin-bottom: 0.4rem;
+      }
+      .award-name { flex: 1; margin-right: 15px; }
+      .award-year {
+        white-space: nowrap;
+        color: var(--soft);
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* Talks / Services lists */
+      .group-block { margin-bottom: 0.6rem; }
+      .group-block ul { margin-top: 0.1rem; }
+
+      /* Highlight callout */
+      .highlight-callout {
+        background: var(--chip-bg);
+        border-left: 3px solid var(--link);
+        padding: 0.75rem 1rem;
+        border-radius: 4px;
+        margin: 1rem 0 1.2rem 0 !important;
+        font-size: 0.97rem;
+        line-height: 1.55;
+      }
+      .highlight-callout strong { color: var(--link-hover); }
+
+      autocolor { color: var(--uclablue); }
+
+      /* Responsive */
+      @media (max-width: 820px) {
+        .wrapper { flex-direction: column; gap: 24px; padding: 20px 8px; }
+        header {
+          width: 100%;
+          position: static;
+          text-align: center;
+        }
+        .image.avatar { margin: 0 auto 16px; }
+        .image.avatar img { width: 160px; height: 160px; }
+        section { max-width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a class="image avatar"><img src="./assets/img/shan.jpg" alt="avatar" /></a>
+
+        <h1>Shan Yu</h1>
+
+        <position>Ph.D. Candidate</position>
+        <a href="" rel="noopener"><autocolor>UCLA Systems Lab</autocolor></a>
+        <email>shanyu (at) cs.ucla.edu</email>
+
+        <div class="social-icons">
+          <a href="https://scholar.google.com/citations?user=324qOjUAAAAJ&hl=en" aria-label="Google Scholar">
+            <i class="ai ai-google-scholar"></i>
+          </a>
+          <a href="https://github.com/shanyu-sys" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/shan-yu-7a5728169" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </header>
+
+      <section>
+
+        <h2 id="about-me">About Me</h2>
+
+        <p>I am a Ph.D. candidate in Computer Science at the <a href="http://systems.cs.ucla.edu/">UCLA Systems Lab</a>, advised by Prof. <a href="https://web.cs.ucla.edu/~harryxu/">Harry Xu</a>.</p>
+
+        <p>My research lies in <strong>machine learning systems (MLSys)</strong>, with a focus on building <strong>cost-efficient, low-latency systems for compound AI workloads</strong>, including large language model (LLM) serving (<a href="https://arxiv.org/abs/2505.04021">Prism</a>, <a href="https://arxiv.org/pdf/2410.01228.pdf">ConServe</a>), multi-agent systems (<a href="https://arxiv.org/abs/2604.25899">Pythia</a>), and video QA pipelines (<a href="https://github.com/vqpy/vqpy">VQPy</a>).</p>
+
+        <p>Before joining UCLA, I was a Senior AI Frameworks Engineer at Intel, where I was a core developer of <a href="https://github.com/intel/BigDL">BigDL</a>, an open-source framework for scalable big data analytics and AI, and shipped distributed AI pipelines deployed at production scale. I received my bachelor's and master's degrees from Zhejiang University.</p>
+
+        <p class="highlight-callout"><strong>Looking for interns!</strong> If you're interested in LLM infra and would like to help build the open-source <a href="https://github.com/ovg-project/kvcached">kvcached</a> project together, please send me an email and let's chat.</p>
+
+        <h2 id="news">News</h2>
+        <ul id="news-list">
+          <li><span class="news-date">May 2026</span><span class="news-body">Prism selected as a research highlight by Amazon.</span></li>
+          <li><span class="news-date">May 2026</span><span class="news-body">ConServe accepted to ICML 2026.</span></li>
+          <li><span class="news-date">Apr 2026</span><span class="news-body">Prism accepted to OSDI 2026. See you in Seattle!</span></li>
+          <li><span class="news-date">Apr 2026</span><span class="news-body"><a href="https://github.com/ovg-project/kvcached">kvcached</a> has been productionized by Red Hat for cost-efficient multi-LLM serving. Read the <a href="https://www.redhat.com/en/blog/running-llms-dynamically-production-limited-resources-hard-we-think-theres-room-another-approach">Red Hat blog</a>.</span></li>
+          <li><span class="news-date">Oct 2025</span><span class="news-body">Released <a href="https://github.com/ovg-project/kvcached">kvcached</a> with a technical <a href="https://yifanqiao.notion.site/Solve-the-GPU-Cost-Crisis-with-kvcached-289da9d1f4d68034b17bf2774201b141">deep-dive blog</a>.</span></li>
+          <li><span class="news-date">Sept 2025</span><span class="news-body">Received the 2025 Amazon AI Fellowship.</span></li>
+          <li><span class="news-date">June 2025</span><span class="news-body">Started a research internship with the Alibaba Cloud team in Bellevue.</span></li>
+        </ul>
+
+        <h2 id="opensource">Open Source</h2>
+
+        <div class="project">
+          <div class="project-name"><a href="https://github.com/ovg-project/kvcached"><i class="fab fa-github"></i>kvcached</a><span class="project-tagline">elastic KV cache sharing for multi-LLM serving</span></div>
+          <p class="project-desc">An open-source library that brings elastic GPU memory sharing to LLM serving, enabling cost-efficient colocation of multiple LLMs with drop-in support for SGLang and vLLM.</p>
+          <div class="project-meta">
+            <span class="badge">Productionized by Red Hat</span>
+            Co-led with <a href="https://jxing.me/">Jiarong Xing</a> and <a href="https://yifanqiao.com/">Yifan Qiao</a> · <a href="https://www.redhat.com/en/blog/running-llms-dynamically-production-limited-resources-hard-we-think-theres-room-another-approach">Red Hat blog</a> · <a href="https://yifanqiao.notion.site/Solve-the-GPU-Cost-Crisis-with-kvcached-289da9d1f4d68034b17bf2774201b141">Deep-dive blog</a>
+          </div>
+        </div>
+
+        <h2 id="publications">Publications</h2>
+        <div class="publications">
+          <ol class="bibliography">
+
+            <li>
+              <div class="pub-row">
+                <div class="title"><a href="https://arxiv.org/abs/2604.25899">Pythia: Toward Predictability-Driven Agent-Native LLM Serving</a></div>
+                <div class="author"><strong>Shan Yu</strong>, Junyi Shu, Yuanjiang Ni, Kun Qian, Xue Li, Yang Wang, Jinyuan Zhang, Ziyi Xu, Shuo Yang, Lingjun Zhu, Ennan Zhai, Qingda Lu, Jiarong Xing, Youyou Lu, Xin Jin, Xuanzhe Liu, Harry Xu</div>
+                <div class="periodical">arXiv preprint, 2026</div>
+                <div class="links">
+                  <a href="https://arxiv.org/abs/2604.25899" target="_blank" rel="noopener">PDF</a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="pub-row">
+                <div class="title"><a href="https://arxiv.org/pdf/2505.04021.pdf">Prism: Cost-Efficient Multi-LLM Serving via GPU Memory Ballooning</a></div>
+                <div class="author"><strong>Shan Yu</strong>, Yifan Qiao, Mingyuan Ma, Yangmin Li, Shuo Yang, Xinyuan Tong, Yang Wang, Zhiqiang Xie, Yuwei An, Shiyi Cao, Ke Bao, Deepak Vij, Xiaoning Ding, Yichen Wang, Qingda Lu, Zhong Wang, Gao Gao, Harry Xu, Junyi Shu, Jiarong Xing, Ying Sheng</div>
+                <div class="periodical">20th USENIX Symposium on Operating Systems Design and Implementation <strong>(OSDI)</strong>, 2026</div>
+                <div class="links">
+                  <a href="https://arxiv.org/pdf/2505.04021.pdf" target="_blank" rel="noopener">PDF</a>
+                  <a href="https://github.com/ovg-project" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="pub-row">
+                <div class="title"><a href="https://arxiv.org/pdf/2410.01228.pdf">ConServe: Fine-Grained GPU Harvesting for LLM Online and Offline Co-Serving</a></div>
+                <div class="author">Yifan Qiao, <strong>Shan Yu</strong>, Shu Anzai, Haoran Ma, Shuo Yang, Yang Wang, Miryung Kim, Yongji Wu, Yang Zhou, Jiarong Xing, Joseph E. Gonzalez, Ion Stoica, Harry Xu</div>
+                <div class="periodical">43rd International Conference on Machine Learning <strong>(ICML)</strong>, 2026</div>
+                <div class="links">
+                  <a href="https://arxiv.org/pdf/2410.01228.pdf" target="_blank" rel="noopener">PDF</a>
+                  <a href="https://github.com/ivanium/concerto" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="pub-row">
+                <div class="title"><a href="https://arxiv.org/abs/2311.01623">VQPy: An Object-Oriented Approach to Modern Video Analytics</a></div>
+                <div class="author"><strong>Shan Yu</strong>, Zhenting Zhu, Yu Chen, Hanchen Xu, Pengzhan Zhao, Yang Wang, Arthi Padmanabhan, Hugo Latapie, Harry Xu</div>
+                <div class="periodical">Conference on Machine Learning and Systems <strong>(MLSys)</strong>, 2024</div>
+                <div class="links">
+                  <a href="https://arxiv.org/abs/2311.01623" target="_blank" rel="noopener">PDF</a>
+                  <a href="https://github.com/vqpy/vqpy" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="pub-row">
+                <div class="title"><a href="https://www.usenix.org/system/files/osdi24-ma-haoran.pdf">DRust: Language-Guided Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency</a></div>
+                <div class="author">Haoran Ma, Yifan Qiao, Shi Liu, <strong>Shan Yu</strong>, Yuanjiang Ni, Qingda Lu, Jiesheng Wu, Yiying Zhang, Miryung Kim, Harry Xu</div>
+                <div class="periodical">USENIX Symposium on Operating Systems Design and Implementation <strong>(OSDI)</strong>, 2024</div>
+                <div class="links">
+                  <a href="https://www.usenix.org/system/files/osdi24-ma-haoran.pdf" target="_blank" rel="noopener">PDF</a>
+                  <a href="https://github.com/uclasystem/DRust" target="_blank" rel="noopener">Code</a>
+                  <a href="https://www.usenix.org/conference/osdi24/presentation/ma-haoran" target="_blank" rel="noopener">Talk</a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="pub-row">
+                <div class="title"><a href="https://arxiv.org/pdf/2307.10577.pdf">Ethosight: A Reasoning-Guided Iterative Learning System for Nuanced Perception based on Joint-Embedding and Contextual Label Affinity</a></div>
+                <div class="author">Hugo Latapie, <strong>Shan Yu</strong>, Patrick Hammer, Kristinn R. Thorisson, Vahagn Petrosyan, Brandon Kynoch, Alind Khare, Payman Behnam, Alexey Tumanov, Aksheit Saxena, Anish Aralikatti, Hanning Chen, Mohsen Imani, Mike Archbold, Tangrui Li, Pei Wang, Justin Hart</div>
+                <div class="periodical">arXiv preprint, 2023</div>
+                <div class="links">
+                  <a href="https://arxiv.org/pdf/2307.10577.pdf" target="_blank" rel="noopener">PDF</a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="pub-row">
+                <div class="title"><a href="https://arxiv.org/abs/2204.01715">BigDL 2.0: Seamless Scaling of AI Pipelines from Laptops to Distributed Cluster</a></div>
+                <div class="author">Jason (Jinquan) Dai, Ding Ding, Dongjie Shi, Shengsheng Huang, Jiao Wang, Xin Qiu, Kai Huang, Guoqiong Song, Yang Wang, Qiyuan Gong, Jiaming Song, <strong>Shan Yu</strong>, Le Zheng, Yina Chen, Junwei Deng, Ge Song</div>
+                <div class="periodical">IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong> Workshop, 2022</div>
+                <div class="links">
+                  <a href="https://arxiv.org/abs/2204.01715" target="_blank" rel="noopener">PDF</a>
+                  <a href="https://github.com/intel/BigDL" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+
+        <h2 id="services">Services</h2>
+        <ul>
+          <li>MLSys 2026, External Review Committee</li>
+          <li>ASPLOS 2026, External Review Committee</li>
+          <li>EuroSys 2026, Shadow Program Committee</li>
+          <li><a href="https://www.usenix.org/conference/osdi24">OSDI 2024</a>, Artifact Evaluation Committee</li>
+          <li><a href="https://www.usenix.org/conference/atc24">ATC 2024</a>, Artifact Evaluation Committee</li>
+        </ul>
+
+        <h2 id="talks">Talks</h2>
+
+        <div class="group-block">
+          <h4>VQPy: An Object-Oriented Approach to Modern Video Analytics</h4>
+          <ul><li>Zhejiang University, Nanjing University, Chinese Academy of Sciences, 2023</li></ul>
+        </div>
+
+        <div class="group-block">
+          <h4>What's On-going in the Spark + AI Community</h4>
+          <ul><li>InfoQ Live <em>Big Shot Talks</em>, 2021</li></ul>
+        </div>
+
+        <div class="group-block">
+          <h4>Chronos: Scalable Time Series Analytics with AutoML</h4>
+          <ul><li>Intel <em>IAGS China Technical Dev Series</em>, 2021</li></ul>
+        </div>
+
+        <div class="group-block">
+          <h4>Time Series Analytics using AutoML and Ray on Analytics Zoo</h4>
+          <ul><li>Intel <em>Data Centric Conference and New Product Launch</em>, 2020</li></ul>
+        </div>
+
+        <div class="group-block">
+          <h4>Leveraging Distributed AutoML for Time Series Analytics</h4>
+          <ul><li>Alibaba EMR <em>Apache Spark Chinese Technology Salon</em>, Shanghai, 2019</li></ul>
+        </div>
+
+        <div class="group-block">
+          <h4>Game Playing Using AI on Spark</h4>
+          <ul><li>O'Reilly Artificial Intelligence Conference, Beijing, 2019</li></ul>
+        </div>
+
+        <h2 id="awards">Awards</h2>
+        <ul class="awards-list">
+          <li class="award-item"><span class="award-name">Amazon AI PhD Fellowship</span><span class="award-year">2025</span></li>
+          <li class="award-item"><span class="award-name">MLSys Student Grant</span><span class="award-year">2024</span></li>
+          <li class="award-item"><span class="award-name">NSDI Diversity Grant</span><span class="award-year">2024</span></li>
+          <li class="award-item"><span class="award-name">UCLA Summer Mentored Research Fellowship</span><span class="award-year">2023, 2024</span></li>
+          <li class="award-item"><span class="award-name">Cisco You Amaze 2 Award</span><span class="award-year">2023</span></li>
+          <li class="award-item"><span class="award-name">Intel Division Recognition Award</span><span class="award-year">2021, 2022</span></li>
+          <li class="award-item"><span class="award-name">Graduate of Merit, Zhejiang University</span><span class="award-year">2017–2018</span></li>
+          <li class="award-item"><span class="award-name">Honor for Graduate, Zhejiang University</span><span class="award-year">2016–2018</span></li>
+          <li class="award-item"><span class="award-name">Academic Scholarship, Zhejiang University</span><span class="award-year">2015–2016</span></li>
+        </ul>
+
+      </section>
+    </div>
+    <script src="./assets/js/scale.fix.js"></script>
+  </body>
+</html>

@@ -1,7 +1,6 @@
 ## Services
 
 <ul style="margin:0 0 5px;">
-  <li>NeurIPS 2026, Reviewer</li>
   <li>MLSys 2026, External Review Committee</li>
   <li>ASPLOS 2026, External Review Committee</li>
   <li>EuroSys 2026, Shadow Program Committee</li>
