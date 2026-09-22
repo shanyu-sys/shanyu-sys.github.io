@@ -19,7 +19,7 @@ main:
     authors: Yifan Qiao, <strong>Shan Yu</strong>, Shu Anzai, Haoran Ma, Shuo Yang, Yang Wang, Miryung Kim, Yongji Wu, Yang Zhou, Jiarong Xing, Joseph E. Gonzalez, Ion Stoica, Harry Xu
     conference_short: ICML
     conference: 43rd International Conference on Machine Learning <strong>(ICML)</strong>, 2026.
-    pdf: https://arxiv.org/pdf/2410.01228.pdf
+    pdf: https://web.cs.ucla.edu/~harryxu/papers/conserve-icml26.pdf
     code: https://github.com/ivanium/concerto
     # bibtex: /assets/bibtex/concerto.bib
 

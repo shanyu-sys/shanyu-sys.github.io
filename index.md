@@ -6,7 +6,7 @@ layout: homepage
 
 I am a Ph.D. candidate in Computer Science at the [UCLA Systems Lab](http://systems.cs.ucla.edu/), advised by Prof. [Harry Xu](https://web.cs.ucla.edu/~harryxu/).
 
-My research lies in **machine learning systems (MLSys)**, with a focus on building **cost-efficient, low-latency systems for compound AI workloads**, including large language model (LLM) serving ([Prism](https://arxiv.org/abs/2505.04021), [ConServe](https://arxiv.org/pdf/2410.01228.pdf)), multi-agent systems ([Pythia](https://arxiv.org/abs/2604.25899)), and video QA pipelines ([VQPy](https://github.com/vqpy/vqpy)).
+My research lies in **machine learning systems (MLSys)**, with a focus on building **cost-efficient, low-latency systems for compound AI workloads**, including large language model (LLM) serving ([Prism](https://arxiv.org/abs/2505.04021), [ConServe](https://web.cs.ucla.edu/~harryxu/papers/conserve-icml26.pdf)), multi-agent systems ([Pythia](https://arxiv.org/abs/2604.25899)), and video QA pipelines ([VQPy](https://github.com/vqpy/vqpy)).
 
 Before joining UCLA, I was a Senior AI Frameworks Engineer at Intel, where I was a core developer of [BigDL](https://github.com/intel/BigDL), an open-source framework for scalable big data analytics and AI, and shipped distributed AI pipelines deployed at production scale. I received my bachelor's and master's degrees from Zhejiang University.
 
