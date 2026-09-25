@@ -10,8 +10,6 @@ My research lies in **machine learning systems (MLSys)**, with a focus on buildi
 
 Before joining UCLA, I was a Senior AI Frameworks Engineer at Intel, where I was a core developer of [BigDL](https://github.com/intel/BigDL), an open-source framework for scalable big data analytics and AI, and shipped distributed AI pipelines deployed at production scale. I received my bachelor's and master's degrees from Zhejiang University.
 
-<p class="highlight-callout"><strong>Looking for interns!</strong> If you're interested in LLM infra and would like to help build the open-source <a href="https://github.com/ovg-project/kvcached">kvcached</a> project together, please send me an email and let's chat.</p>
-
 
 ## News
 
